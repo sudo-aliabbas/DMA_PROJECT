@@ -1,0 +1,161 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.0">
+  <diagram name="Page-1" id="Mh4-fEHMhDU1Q9R4smkD">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Module Box -->
+        <mxCell id="module_box" value="&lt;b&gt;dma_fifo&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;DATA_WIDTH=32, DEPTH=256&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="100" width="120" height="500" as="geometry" />
+        </mxCell>
+        
+        <!-- Input Arrows (Left Side) -->
+        
+        <!-- clk -->
+        <mxCell id="clk_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="280" y="120" as="sourcePoint" />
+            <mxPoint x="380" y="120" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="clk_label" value="clk" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="40" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- rst_n -->
+        <mxCell id="rst_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="280" y="150" as="sourcePoint" />
+            <mxPoint x="380" y="150" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="rst_label" value="rst_n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="130" width="40" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- wr_en (Write Interface) -->
+        <mxCell id="wr_en_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="280" y="200" as="sourcePoint" />
+            <mxPoint x="380" y="200" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="wr_en_label" value="wr_en" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="180" width="50" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- wr_data[31:0] -->
+        <mxCell id="wr_data_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="280" y="230" as="sourcePoint" />
+            <mxPoint x="380" y="230" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="wr_data_label" value="wr_data[31:0]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="210" width="70" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- rd_en (Read Interface) -->
+        <mxCell id="rd_en_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="280" y="280" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="rd_en_label" value="rd_en" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="260" width="50" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Output Arrows (Right Side) -->
+        
+        <!-- full -->
+        <mxCell id="full_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="500" y="200" as="sourcePoint" />
+            <mxPoint x="600" y="200" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="full_label" value="full" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="180" width="50" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- rd_data[31:0] -->
+        <mxCell id="rd_data_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="500" y="230" as="sourcePoint" />
+            <mxPoint x="600" y="230" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="rd_data_label" value="rd_data[31:0]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="210" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- empty -->
+        <mxCell id="empty_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="500" y="280" as="sourcePoint" />
+            <mxPoint x="600" y="280" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="empty_label" value="empty" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- count[7:0] (for DEPTH=256, $clog2(256)=8) -->
+        <mxCell id="count_arrow" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="500" y="330" as="sourcePoint" />
+            <mxPoint x="600" y="330" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="count_label" value="count[7:0]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="310" width="70" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Write Interface Label -->
+        <mxCell id="write_if_label" value="&lt;b&gt;Write Interface&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Read Interface Label -->
+        <mxCell id="read_if_label" value="&lt;b&gt;Read Interface&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Status Label -->
+        <mxCell id="status_label" value="&lt;b&gt;Status&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="620" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Title Labels for Input/Output -->
+        <mxCell id="inputs_label" value="&lt;b&gt;Inputs (5)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="outputs_label" value="&lt;b&gt;Outputs (4)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

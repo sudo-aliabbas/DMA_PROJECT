@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.2">
+  <diagram id="page1" name="Page-1">
+    <mxGraphModel dx="842" dy="475" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- External Blocks -->
+        <mxCell id="test_bench" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" value="Test Bench" vertex="1">
+          <mxGeometry height="60" width="150" x="40" y="300" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="simple_memory" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" value="Simple Memory" vertex="1">
+          <mxGeometry height="70" width="150" x="690" y="300" as="geometry" />
+        </mxCell>
+        
+        <!-- Top Module Container -->
+        <mxCell id="top_module_container" parent="1" style="swimlane;whiteSpace=wrap;html=1;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="420" width="380" x="240" y="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Top Module Label -->
+        <mxCell id="top_module_label" parent="top_module_container" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" value="DMA Controller Top" vertex="1">
+          <mxGeometry height="30" width="120" x="130" y="10" as="geometry" />
+        </mxCell>
+        
+        <!-- Register File - Top Left -->
+        <mxCell id="register_file" parent="top_module_container" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;" value="Register File" vertex="1">
+          <mxGeometry height="50" width="110" x="20" y="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Control FSM - Middle Left -->
+        <mxCell id="fsm" parent="top_module_container" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;" value="Control FSM" vertex="1">
+          <mxGeometry height="50" width="110" x="20" y="150" as="geometry" />
+        </mxCell>
+        
+        <!-- Datapath - Top Right -->
+        <mxCell id="datapath" parent="top_module_container" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;" value="Datapath" vertex="1">
+          <mxGeometry height="50" width="110" x="250" y="70" as="geometry" />
+        </mxCell>
+        
+        <!-- FIFO - Middle Right -->
+        <mxCell id="fifo" parent="top_module_container" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;" value="FIFO" vertex="1">
+          <mxGeometry height="50" width="110" x="250" y="150" as="geometry" />
+        </mxCell>
+        
+        <!-- AXI Master - Bottom Center -->
+        <mxCell id="axi_master" parent="top_module_container" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;" value="AXI Master" vertex="1">
+          <mxGeometry height="50" width="110" x="135" y="250" as="geometry" />
+        </mxCell>
+        
+        <!-- CONNECTIONS BASED ON TOP MODULE CODE -->
+        
+        <!-- Register File -> Control FSM -->
+        <mxCell id="conn_rf_fsm" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="register_file" target="fsm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Register File -> Datapath -->
+        <mxCell id="conn_rf_dp" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="register_file" target="datapath">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Control FSM -> Datapath -->
+        <mxCell id="conn_fsm_dp" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="fsm" target="datapath">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Control FSM -> AXI Master -->
+        <mxCell id="conn_fsm_axi" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="fsm" target="axi_master">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Datapath -> Control FSM -->
+        <mxCell id="conn_dp_fsm" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="datapath" target="fsm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Datapath -> AXI Master -->
+        <mxCell id="conn_dp_axi" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="datapath" target="axi_master">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- AXI Master -> FIFO (Write Data Path) -->
+        <mxCell id="conn_axi_fifo_write" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="axi_master" target="fifo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- FIFO -> AXI Master (Read Data Path) -->
+        <mxCell id="conn_fifo_axi_read" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="fifo" target="axi_master">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- FIFO -> Control FSM (fifo_count) -->
+        <mxCell id="conn_fifo_fsm" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;" source="fifo" target="fsm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- AXI Master -> Control FSM (status signals) -->
+        <mxCell id="conn_axi_fsm" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;" source="axi_master" target="fsm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Control FSM -> Register File (status feedback) -->
+        <mxCell id="conn_fsm_rf" edge="1" parent="top_module_container" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;" source="fsm" target="register_file">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- External Connections -->
+        
+        <!-- Test Bench -> Top Module -->
+        <mxCell id="conn_test_to_top" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="330" as="sourcePoint" />
+            <mxPoint x="240" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Top Module -> Simple Memory (Write) -->
+        <mxCell id="conn_top_to_mem_write" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="310" as="sourcePoint" />
+            <mxPoint x="690" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Simple Memory -> Top Module (Read) -->
+        <mxCell id="conn_mem_to_top_read" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="690" y="340" as="sourcePoint" />
+            <mxPoint x="620" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,362 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.2">
+  <diagram name="Page-1" id="Mh4-fEHMhDU1Q9R4smkD">
+    <mxGraphModel dx="1025" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="module_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;axi_slave_mem&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;AXI4 Slave Memory (64KB)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="870" width="120" x="380" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="clk_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;Clock &amp; Reset&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="250" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aclk_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="160" as="sourcePoint" />
+            <mxPoint x="380" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aclk_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="aclk" vertex="1">
+          <mxGeometry height="30" width="50" x="250" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aresetn_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="190" as="sourcePoint" />
+            <mxPoint x="380" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aresetn_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="aresetn" vertex="1">
+          <mxGeometry height="30" width="60" x="240" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="read_addr_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;AXI Read Address&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="230" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_arid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="260" as="sourcePoint" />
+            <mxPoint x="380" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_arid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_arid[3:0]" vertex="1">
+          <mxGeometry height="30" width="85" x="215" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_araddr_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="290" as="sourcePoint" />
+            <mxPoint x="380" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_araddr_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_araddr[31:0]" vertex="1">
+          <mxGeometry height="30" width="105" x="195" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_arlen_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="320" as="sourcePoint" />
+            <mxPoint x="380" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_arlen_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_arlen[7:0]" vertex="1">
+          <mxGeometry height="30" width="90" x="210" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_arsize_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="350" as="sourcePoint" />
+            <mxPoint x="380" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_arsize_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_arsize[2:0]" vertex="1">
+          <mxGeometry height="30" width="95" x="205" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_arburst_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="380" as="sourcePoint" />
+            <mxPoint x="380" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_arburst_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_arburst[1:0]" vertex="1">
+          <mxGeometry height="30" width="100" x="200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_arvalid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="410" as="sourcePoint" />
+            <mxPoint x="380" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_arvalid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_arvalid" vertex="1">
+          <mxGeometry height="30" width="100" x="200" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="read_data_input_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;AXI Read Data Ctrl&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="230" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_rready_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="380" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_rready_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_rready" vertex="1">
+          <mxGeometry height="30" width="90" x="210" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="write_addr_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;AXI Write Address&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="230" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_awid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="560" as="sourcePoint" />
+            <mxPoint x="380" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_awid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_awid[3:0]" vertex="1">
+          <mxGeometry height="30" width="85" x="215" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_awaddr_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="590" as="sourcePoint" />
+            <mxPoint x="380" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_awaddr_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_awaddr[31:0]" vertex="1">
+          <mxGeometry height="30" width="105" x="195" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_awlen_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="620" as="sourcePoint" />
+            <mxPoint x="380" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_awlen_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_awlen[7:0]" vertex="1">
+          <mxGeometry height="30" width="90" x="210" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_awsize_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="650" as="sourcePoint" />
+            <mxPoint x="380" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_awsize_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_awsize[2:0]" vertex="1">
+          <mxGeometry height="30" width="95" x="205" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_awburst_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="680" as="sourcePoint" />
+            <mxPoint x="380" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_awburst_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_awburst[1:0]" vertex="1">
+          <mxGeometry height="30" width="100" x="200" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_awvalid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="710" as="sourcePoint" />
+            <mxPoint x="380" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_awvalid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_awvalid" vertex="1">
+          <mxGeometry height="30" width="100" x="200" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="write_data_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;AXI Write Data&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="230" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_wdata_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="790" as="sourcePoint" />
+            <mxPoint x="380" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_wdata_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_wdata[31:0]" vertex="1">
+          <mxGeometry height="30" width="105" x="195" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_wstrb_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="820" as="sourcePoint" />
+            <mxPoint x="380" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_wstrb_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_wstrb[3:0]" vertex="1">
+          <mxGeometry height="30" width="100" x="200" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_wlast_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="850" as="sourcePoint" />
+            <mxPoint x="380" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_wlast_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_wlast" vertex="1">
+          <mxGeometry height="30" width="80" x="220" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_wvalid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="880" as="sourcePoint" />
+            <mxPoint x="380" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_wvalid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_wvalid" vertex="1">
+          <mxGeometry height="30" width="90" x="210" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="write_resp_input_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;AXI Write Resp Ctrl&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="220" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_bready_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="280" y="950" as="sourcePoint" />
+            <mxPoint x="380" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_bready_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_bready" vertex="1">
+          <mxGeometry height="30" width="90" x="210" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="read_addr_output_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;Read Addr Ctrl&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="500" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_arready_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="290" as="sourcePoint" />
+            <mxPoint x="600" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_arready_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_arready" vertex="1">
+          <mxGeometry height="30" width="100" x="600" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="read_data_output_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;AXI Read Data&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="500" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_rid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="380" as="sourcePoint" />
+            <mxPoint x="600" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_rid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_rid[3:0]" vertex="1">
+          <mxGeometry height="30" width="100" x="600" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_rdata_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="410" as="sourcePoint" />
+            <mxPoint x="600" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_rdata_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_rdata[31:0]" vertex="1">
+          <mxGeometry height="30" width="110" x="600" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_rresp_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="440" as="sourcePoint" />
+            <mxPoint x="600" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_rresp_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_rresp[1:0]" vertex="1">
+          <mxGeometry height="30" width="100" x="600" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_rlast_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="470" as="sourcePoint" />
+            <mxPoint x="600" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_rlast_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_rlast" vertex="1">
+          <mxGeometry height="30" width="90" x="600" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_rvalid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="500" as="sourcePoint" />
+            <mxPoint x="600" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_rvalid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_rvalid" vertex="1">
+          <mxGeometry height="30" width="90" x="600" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="write_addr_output_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;Write Addr Ctrl&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="500" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_awready_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="590" as="sourcePoint" />
+            <mxPoint x="600" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_awready_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_awready" vertex="1">
+          <mxGeometry height="30" width="100" x="600" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="write_data_output_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;Write Data Ctrl&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="500" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_wready_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="680" as="sourcePoint" />
+            <mxPoint x="600" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_wready_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_wready" vertex="1">
+          <mxGeometry height="30" width="90" x="600" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="write_resp_output_header" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="&lt;b&gt;AXI Write Resp&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="500" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_bid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="770" as="sourcePoint" />
+            <mxPoint x="600" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_bid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_bid[3:0]" vertex="1">
+          <mxGeometry height="30" width="100" x="600" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_bresp_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="800" as="sourcePoint" />
+            <mxPoint x="600" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_bresp_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_bresp[1:0]" vertex="1">
+          <mxGeometry height="30" width="100" x="600" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="s_axi_bvalid_arrow" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="830" as="sourcePoint" />
+            <mxPoint x="600" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_axi_bvalid_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="s_axi_bvalid" vertex="1">
+          <mxGeometry height="30" width="90" x="600" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="inputs_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" value="&lt;b&gt;Inputs (20)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="outputs_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" value="&lt;b&gt;Outputs (11)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="600" y="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
